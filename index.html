@@ -9,25 +9,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bc83835f12.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <header class="cabecalho">
-            <h1 class="titulo">Nerdin Bank</h1>
-            <nav class="navbar">
-                <ul>
-                    <li>nerdin | o banco espacial dos nerds</li>
-                    <button type="button">seja um nerdin</button>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            
-        </section>
+    <header class="cabecalho">
+        <h1 class="titulo">Nerdin Bank</h1>
+        <nav class="navbar">
+            <ul>
+                <li>nerdin | o banco espacial dos nerds</li>
+            </ul>
+            <button type="button" onclick="mostrarMenu()">seja um nerdin</button>
+        </nav>
+        <div class="form_container">
+            <form id="formulario" class="formulario_cadastro">
+                <fieldset>
+                    <input type="text" placeholder="Nome">
+                    <input type="number" placeholder="CPF">
+                    <input type="number"  placeholder="Celular">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmação de senha">
+                    <input type="submit" placeholder="Enviar">
+                    <input type="reset" placeholder="Limpar formulário">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <main class="container_main">
+        <div class="container">
+            <p><span class="text_form1">TAM TAM TAM</span><br>
+                <span class="text_form2">TAAAAAAAAAAM</span><br>
+                <span class="text_form3">TAAAM TANANANAAAAANAAM</span><br>
+                <span class="text_form4">TANANANAAAAM</span><br>
+                <span class="text_form5"> naaam tantam naaaam</span><br>
+                <span class="text_form1">se vc cantou, </span></p> 
+        </div>
+        <div class="btn_container">
+            <button class="btn" type="submit" title="abra sua conta">abra sua conta</button>
+        </div>
     </main>
     <footer class="rodape">
+        <div class="left">
+            <h2>siga o nerdin</h2>
+            <a title="logos" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a title="logos" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a title="logos" href="#"><i class="fa-brands fa-twitch"></i></a>
+            <a title="logos" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
         <div class="center">
             <h3>nerdin bank<span>&copy</span></h3>
+        </div>
+        <div class="right">
+            <h2>Empresa</h2>
+            <ul>
+                <a href="#"><li>What´s nerdin</li></a>
+                <a href="#"><li>sobre a nerdin</li></a>
+                <a href="#"><li>carreira</li></a>
+            </ul>
         </div>
     </footer>
 </body>
