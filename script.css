@@ -19,6 +19,27 @@ body{
 main{
     flex-grow: 1;
 }
+
+#form-cadastro, 
+#form-operacao{
+    display: none;
+}
+body.open #form-cadastro, 
+body.open #form-operacao{
+    position: sticky;
+    display: grid;
+    background-color: #ffbd59;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+main form{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
 /* Header */
 .cabecalho{
     width: 100%;

@@ -44,8 +44,52 @@
                 <span class="text_form1">se vc cantou, </span></p> 
         </div>
         <div class="btn_container">
-            <button class="btn" type="submit" title="abra sua conta">abra sua conta</button>
+            <button onclick="document.body.classList.toggle('open')" class="btn" type="submit" title="abra sua conta">abra sua conta</button>
         </div>
+        <form class="formStyle" id="form-cadastro">
+            <div>
+                <label for="nome">Nome: </label><input placeholder="Digite seu nome" id="nome" required type="text">
+            </div>
+            <div>
+                <label for="cpf">CPF: </label><input id="cpf" placeholder="Digite seu CPF" required type="text">
+            </div>
+            <div>
+                <label for="celular">Celular: </label><input id="celular" placeholder="Digite seu número de telefone" required type="text">
+            </div>
+            <div>
+                <label for="senha">Senha: </label><input id="senha" placeholder="Digite sua senha" required type="password">
+            </div>
+            <div>
+                <label for="confirmacaoSenha">Senha: </label><input id="confirmacaoSenha" placeholder="Confirme sua senha" required type="password">
+            </div>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <form class="formStyle" id="form-operacao">
+            <div>
+                <label for="conta">Conta: </label><input required id="conta" type="number" placeholder="digite a conta">
+            </div>
+            <div>
+                <label for="operacao">Operacao</label>
+                <select name="operacao" id="operacao">
+                    <option value="saque">Saque</option>
+                    <option value="deposito">Deposito</option>
+                    <option value="saldo">consulta saque</option>
+                </select>
+                <div>
+                    <label for="valor">Valor: </label><input required id="valor" type="number" placeholder="digite o valor">
+                </div>
+                <div>
+                    <label for="senhaOperacao">Senha: </label><input required id="senhaOperacao" type="number" placeholder="digite a senha">
+                </div>
+            </div>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Confirmar</button>
+            </div>
+        </form>
     </main>
     <footer class="rodape">
         <div class="left">
